@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Photo main -->
+        <ImageView
+            android:id="@+id/profilePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/profile_photo"
+            android:scaleType="centerCrop" />
+
+        <!-- Photo additional -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/photo1"
+                android:layout_margin="4dp"/>
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/photo2"
+                android:layout_margin="4dp"/>
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/photo3"
+                android:layout_margin="4dp"/>
+        </LinearLayout>
+
+        <!-- Name -->
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ім'я: Михайло"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:id="@+id/nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Нік: @student"
+            android:textSize="16sp"/>
+
+        <!-- Country -->
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Україна, Дніпро"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Interests-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/int1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Програмування"
+                android:layout_marginStart="8dp"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/int2"
+                android:layout_marginStart="16dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Книги"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- Friends -->
+        <TextView
+            android:id="@+id/friendsCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Друзі: 120"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Олексій @alex"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Марина @duck"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Дмитро @demon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. Ірина @iris"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. Сергій @serz"/>
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/app1"
+                android:layout_margin="40dp"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/app2"
+                android:layout_margin="40dp"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/app3"
+                android:layout_margin="40dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
